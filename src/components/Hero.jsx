@@ -4,10 +4,21 @@ import Pic100 from '../assets/heroPics/pic100.png';
 
 
 export default function Hero() {
+    const heroStyle = {
+      width: "100%",
+      height: "auto",
+    };
+
+    const heroImageStyle = {
+        width: "100%",
+        height: "auto",
+        objectfit: "cover",
+    };
+
 
 return (
-    <div className="hero">
-        <img src={Pic7} alt="Home page engagment Photo" /> 
+    <div className="hero" style ={heroStyle}>
+        <img src={Pic7} alt="Home page engagment Photo" style={heroImageStyle}/> 
     </div>
 );
 }
