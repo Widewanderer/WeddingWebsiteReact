@@ -7,6 +7,7 @@ export default function Hero() {
     const heroStyle = {
       width: "100%",
       height: "auto",
+      position: "relative",
     };
 
     const heroImageStyle = {
@@ -15,10 +16,24 @@ export default function Hero() {
         objectfit: "cover",
     };
 
+    const textOverlayStyle = {
+      position: "absolute", // Position the text absolutely
+      top: "78%", // Center the text vertically
+      left: "50%", // Center the text horizontally
+      transform: "translate(-50%, -50%)", // Offset to truly center
+      color: "white", // Text color
+      fontSize: "3rem", // Adjust font size as needed
+      fontWeight: "bold",
+      textAlign: "center",
+    };
+
 
 return (
     <div className="hero" style ={heroStyle}>
-        <img src={Pic7} alt="Home page engagment Photo" style={heroImageStyle}/> 
+        <img src={Pic7} alt="Home page engagment Photo" style={heroImageStyle}/>
+        <div style={textOverlayStyle}>
+            Slava & Fiona
+        </div>
     </div>
 );
 }
