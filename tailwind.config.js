@@ -8,7 +8,7 @@ export default {
 
   theme: {
     colors: {
-      primary: " #f7f0d9",
+      primary: "#fff9ea",
       emerald: "#0E4037",
       EPGreen: "#616F64",
       DarUkrainianRed: "#910112",

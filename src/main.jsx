@@ -4,14 +4,16 @@ import App from './App.jsx'
 import './index.css'
 import { database } from '../firebaseConfig.js'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from './pages/HomePage.jsx'
+import WeddingPartyPage from './pages/WeddingPartyPage.jsx'
+import Travel from './pages/TravelPage.jsx'
+import RSVP from './pages/RSVPPage.jsx'
+import QA from './pages/Q&APage.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
 
 
+
+// Make sure to create error page component for errorElement and error handling
 
 const router = createBrowserRouter([
   {
@@ -21,28 +23,36 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Main />,
+        element: <HomePage />,
       },
       {
-        path: "/WeddingPartyPage",
-        element: <WeddingParty />,
+        path: "/weddingparty",
+        element: <WeddingPartyPage />,
       },
       {
-        path: "/Travel",
+        path: "/travel",
         element: <Travel />,
       },
       {
-        path: "/RSVP",
+        path: "/rsvp",
         element: <RSVP />,
       },
       {
-        path: "/Q&A",
+        path: "/q&a",
         element: <QA />,
       },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// createRoot(document.getElementById("root")).render(
+//   <StrictMode>
+//     <RouterProvider router={router}>
+//       <App />
+//     </RouterProvider>
+//   </StrictMode>
+// );
+
+createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
