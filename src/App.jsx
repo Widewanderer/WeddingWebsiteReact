@@ -6,14 +6,14 @@ import QA from './components/Q&A'
 
 function App() {
   return (
-    <>
-    {/* <Navbar /> */}
-    {/* <Hero /> */}
-    <QA />
-    <QA />
-    <QA />
-    </>
+    <div className='bg-primary min-h-screen'>
+      {/* <Navbar /> */}
+      {/* <Hero /> */}
+      <QA />
+      <QA />
+      <QA />
+    </div>
   )
 }
 
-export default App
+export default App;
