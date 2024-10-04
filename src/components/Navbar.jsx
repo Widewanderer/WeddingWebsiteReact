@@ -21,7 +21,7 @@ import { Link, useLocation } from "react-router-dom";
           </div>
           {/* Center logo Icon */}
           <div className="text-center">
-            <img src="/path-to-my-icon" alt="logo" className="h-10 w-10" />
+            <img src="../assets/react.svg" alt="logo" className="h-10 w-10" />
           </div>
           {/* Right side links  */}
           <div className="flex space-x-4">
@@ -39,29 +39,5 @@ import { Link, useLocation } from "react-router-dom";
       </nav>
     );
   }
-
-
-// function Navbar() {
-//     const location = useLocation();
-//     return (
-//       <nav className="navbar" style={navbarStyle}>
-//         <h1>Test Nav</h1>
-//         <div className="links">
-//           <Link to="/">Home</Link>
-//           <Link to="/weddingparty">Wedding Party</Link>
-//           <Link to="/travel">Travel</Link>
-//           <Link to="/rsvp">RSVP</Link>
-//           <a
-//             href="https://www.zola.com/wedding/slavatysonandfiona"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Registry
-//           </a>
-//           <Link to="/q&a">Q&A</Link>
-//         </div>
-//       </nav>
-//     );
-//  }
 
  export default Navbar;
