@@ -1,9 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-
-  const navbarStyle = {
-    position: 'relative',
-    zIndex: 10,
-  };
   
   // use sticky or absolulte possitioning to keep the navbar at the top of the page and make transparent 
 
@@ -11,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
   function Navbar() {
     const location = useLocation();
     return (
-      <nav className="bg-transparent w-full px-4 py-2 sticky top-0 z-50">
+      <nav className="bg-transparent w-full px-4 py-2 absolute top-0 z-50">
         <div className="flex justify-between items-center">
           {/* Left side links */}
           <div className="flex space-x-4">
@@ -21,7 +16,7 @@ import { Link, useLocation } from "react-router-dom";
           </div>
           {/* Center logo Icon */}
           <div className="text-center">
-            <img src="../assets/react.svg" alt="logo" className="h-10 w-10" />
+            <img src="/react.svg" alt="logo" className="h-10 w-10" />
           </div>
           {/* Right side links  */}
           <div className="flex space-x-4">

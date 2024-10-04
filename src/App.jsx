@@ -8,10 +8,12 @@ import { Outlet } from 'react-router-dom'
 function App() {
   return (
     <div className='bg-primary min-h-screen'>
+      <div className='relative'>
       <Navbar />
       <main>
         <Outlet />
       </main>
+      </div>
     </div>
   )
 }

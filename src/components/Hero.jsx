@@ -1,9 +1,9 @@
-import Pic7 from '../assets/heroPics/Pic7.png';
-import Pic10 from '../assets/heroPics/Pic10.png';
-import Pic100 from '../assets/heroPics/pic100.png';
+const Pic7 = '/heroPics/Pic7.png';
+const Pic10 = '/heroPics/Pic10.png';
+const Pic100 = '../assets/heroPics/pic100.png';
 
 
-export default function Hero() {
+export default function Hero(props) {
     const heroStyle = {
       width: "100%",
       height: "auto",
@@ -30,7 +30,7 @@ export default function Hero() {
 
 return (
     <div className="hero" style ={heroStyle}>
-        <img src={Pic7} alt="Home page engagment Photo" style={heroImageStyle}/>
+        <img src={props.image} alt="Home page engagment Photo" style={heroImageStyle}/>
         {/* refactor Src to be a prop that will pass in an image depending on the page  */}
         <div style={textOverlayStyle}>
             Slava & Fiona

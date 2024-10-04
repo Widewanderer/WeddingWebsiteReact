@@ -1,10 +1,11 @@
 import Hero from '../components/Hero';
 
 
+
 export default function HomePage() {
     return (
         <div>
-        <Hero />
+        <Hero image='/heroPics/Pic7.png' />
         </div>
     );
     }
