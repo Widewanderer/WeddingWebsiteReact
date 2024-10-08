@@ -27,9 +27,8 @@ export default function Hero(props) {
 return (
     <div className="hero" style ={heroStyle}>
         <img src={props.image} alt="Home page engagment Photo" style={heroImageStyle}/>
-        {/* refactor Src to be a prop that will pass in an image depending on the page  */}
         <div style={textOverlayStyle}>
-            Slava & Fiona
+            {props.title}
         </div>
     </div>
 );
