@@ -1,7 +1,3 @@
-const Pic7 = '/heroPics/Pic7.png';
-const Pic10 = '/heroPics/Pic10.png';
-const Pic100 = '../assets/heroPics/pic100.png';
-
 
 export default function Hero(props) {
     const heroStyle = {

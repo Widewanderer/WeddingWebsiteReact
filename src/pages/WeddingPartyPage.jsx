@@ -1,10 +1,10 @@
-
+import Hero from '../components/Hero';
 
 
 export default function WeddingPartyPage() {
     return (
         <div>
-        <h1>Wedding Party Page</h1>
+        <Hero image='/heroPics/Pic2.png'/>
         </div>
     );
     }

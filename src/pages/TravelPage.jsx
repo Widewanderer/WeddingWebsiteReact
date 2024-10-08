@@ -1,11 +1,9 @@
-
-
+import Hero from "../components/Hero";
 
 export default function TravelPage() {
-    return (
-        <div>
-        <h1>Travel Page</h1>
-        </div>
-    );
-    }; 
-    
+  return (
+    <div>
+      <Hero image="/heroPics/Pic10.png"/>
+    </div>
+  );
+}

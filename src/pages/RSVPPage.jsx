@@ -1,11 +1,10 @@
-
-
+import Hero from '../components/Hero';
 
 
 export default function RSVPPage() {
     return (
         <div>
-        <h1>RSVP Page</h1>
+            <Hero image='/heroPics/Pic12.png'/>
         </div>
     );
     }
