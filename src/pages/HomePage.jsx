@@ -1,11 +1,20 @@
 import Hero from '../components/Hero';
+import Schedule from '../components/schedule';
 
 
 
 export default function HomePage() {
     return (
       <div>
-        <Hero image="/heroPics/Pic7.png" title='Slava & Fiona' />
+        <Hero image="/heroPics/Pic7.png" title="Slava & Fiona" />
+        <Schedule
+          event="21:00 Test Event"
+          discription="Test run of schedule component to see if it works. Now I will extend the text to see how it looks with more text."
+        />
+        <Schedule
+          event="22:00 Test Event 2"
+          discription="Test run of schedule component to see how it looks with multiple scheduled events."
+        />
       </div>
     );
     }

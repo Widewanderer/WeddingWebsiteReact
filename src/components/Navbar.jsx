@@ -15,10 +15,10 @@ function Navbar() {
     <nav className="bg-transparent w-full px-4 py-2 absolute top-0 z-50">
       {/* Hamburger Menu Button - Visible on small screens only */}
       <div
-        className="flex justify-between items-center sm:hidden"
+        className="flex justify-between items-center sm:hidden "
         onClick={() => setIsOpen(!isOpen)}
       >
-        <button className="text-black text-3xl">
+        <button className="text-3xl">
           {/* This could be a menu icon */}
           &#9776; {/* Unicode for hamburger menu icon */}
         </button>
