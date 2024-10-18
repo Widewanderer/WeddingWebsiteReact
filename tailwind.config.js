@@ -2,17 +2,16 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#fff9ea",
+        emerald: "#0E4037",
+        EPGreen: "#616F64",
+        DarUkrainianRed: "#910112",
+      },
+    },
   },
   plugins: [],
 
-  theme: {
-    colors: {
-      primary: "#fff9ea",
-      emerald: "#0E4037",
-      EPGreen: "#616F64",
-      DarUkrainianRed: "#910112",
-    },
-  },
 };
 

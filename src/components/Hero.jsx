@@ -1,35 +1,15 @@
 
 export default function Hero(props) {
-    const heroStyle = {
-      width: "100%",
-      height: "auto",
-      position: "relative",
-    };
-
-    const heroImageStyle = {
-        width: "100%",
-        height: "auto",
-        objectfit: "cover",
-    };
-
-    const textOverlayStyle = {
-      position: "absolute", // Position the text absolutely
-      top: "78%", // Center the text vertically
-      left: "50%", // Center the text horizontally
-      transform: "translate(-50%, -50%)", // Offset to truly center
-      color: "white", 
-      fontSize: "3rem", 
-      fontWeight: "bold",
-      textAlign: "center",
-    };
-
-
-return (
-    <div className="hero" style ={heroStyle}>
-        <img src={props.image} alt="Home page engagment Photo" style={heroImageStyle}/>
-        <div style={textOverlayStyle}>
-            {props.title}
-        </div>
+  return (
+    <div className="relative w-full shadow-lg">
+      <img
+        src={props.image}
+        alt="Home page engagement Photo"
+        className="w-full h-auto object-cover"
+      />
+      <div className="absolute top-[78%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold text-center">
+        {props.title}
+      </div>
     </div>
-);
+  );
 }

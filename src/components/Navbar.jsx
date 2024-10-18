@@ -12,10 +12,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent w-full px-4 py-2 absolute top-0 z-50">
-      {/* Hamburger Menu Button - Visible on small screens only */}
+    <nav className="bg-[#D3D3D325] w-full px-4 py-2 absolute top-0 z-50 drop-shadow-lg">
+      {/* Hamburger Menu Button - Visible on small screens only. */}
       <div
-        className="flex justify-between items-center sm:hidden "
+        className="flex justify-between items-center sm:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
         <button className="text-3xl">
@@ -47,7 +47,7 @@ function Navbar() {
         </div>
 
         {/* Center logo - Only visible on larger screens */}
-        <div className="hidden sm:flex text-center">
+        <div className="hidden sm:flex text-center absolute left-1/2">
           <img src="/react.svg" alt="logo" className="h-10 w-10" />
         </div>
 
