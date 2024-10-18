@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-import QA from './components/Q&A'
 import { Outlet } from 'react-router-dom'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <main>
         <Outlet />
       </main>
+      <Footer />
       </div>
     </div>
   )
