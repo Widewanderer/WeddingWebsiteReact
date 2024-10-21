@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 .link {
-  @apply text-lg lg:text-2xl ; 
+  @apply text-xl lg:text-3xl ; 
 }

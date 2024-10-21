@@ -4,8 +4,6 @@ import { useState } from "react";
 
 // try using tailwind mixed blend Mode to make the text change based on the background 
 
-// Could use if statement to present 2 different navbars based on screen size. (current for desktop) Hamburger for mobile. 
-
 
 function Navbar() {
   const location = useLocation();

@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-EPGreen text-slate-500 p-10 flex justify-between items-center text-black">
+    <footer className="bg-EPGreen text-slate-900 p-10 flex justify-between items-center text-black">
       {/* Text aligned to the left */}
       <p>&copy; 2024 Slava & Fiona</p>
 
