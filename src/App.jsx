@@ -10,7 +10,7 @@ function App() {
     <div className='bg-primary min-h-screen'>
       <div className='relative'>
       <Navbar />
-      <main>
+      <main className="pb-10">
         <Outlet />
       </main>
       <Footer />

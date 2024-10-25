@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WeddingPartyCard(props) {
   return (
-    <div className="bg-primary rounded-lg  overflow-hidden p-6 max-w-sm flex-grow">
+    <div className="bg-primary rounded-lg  overflow-hidden p-6 max-w-sm flex-grow mx-auto md:mx-0">
       {/* Image section */}
       <img
         src={props.image}
