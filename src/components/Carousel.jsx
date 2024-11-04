@@ -12,7 +12,7 @@ const CustomPrevArrow = (props) => {
       className={`${className} bg-emerald text-white p-2 rounded-full`}
       style={{
         fontSize: "24px",      // Arrow size
-        left: "10px",          // Position adjustment
+        left: "25px",          // Position adjustment
         zIndex: 1,
       }}
       onClick={onClick}
@@ -28,7 +28,7 @@ const CustomNextArrow = (props) => {
     <button
       className={`${className} p-2 rounded-full`}
       style={{
-        right: "10px",         // Position adjustment
+        right: "25px",         // Position adjustment
         zIndex: 1,
       }}
       onClick={onClick}
@@ -42,7 +42,7 @@ const CustomNextArrow = (props) => {
 
 // Individual Slide Component
 const Slide = ({ imagePath, children }) => (
-  <div className="bg-green-500 h-[60vh] flex items-center justify-center">
+  <div className="bg-green-500 h-[70vh] flex items-center justify-center">
     <img src={imagePath} 
     alt={children} 
     className="object-cover h-full w-full"
@@ -61,10 +61,18 @@ export default function SimpleSlider() {
     arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+            },
+        }, 
+    ],
   };
 
   return (
-    <div className="w-9/10 mx-auto">
+    <div className="w-9/10 mx-auto my-5">
       <Slider {...settings}>
         <Slide imagePath="galleryPics/Gallery1.JPG"></Slide>
         <Slide imagePath="galleryPics/Gallery2.JPG"></Slide>
