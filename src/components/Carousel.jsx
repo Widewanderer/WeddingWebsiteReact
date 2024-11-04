@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
 
+
 // Custom arrow components
 const CustomPrevArrow = (props) => {
   const { className, onClick } = props;
@@ -40,9 +41,12 @@ const CustomNextArrow = (props) => {
 
 
 // Individual Slide Component
-const Slide = ({ children }) => (
+const Slide = ({ imagePath, children }) => (
   <div className="bg-green-500 h-[60vh] flex items-center justify-center">
-    <h3 className="text-white text-3xl">{children}</h3>
+    <img src={imagePath} 
+    alt={children} 
+    className="object-cover h-full w-full"
+    />
   </div>
 );
 
@@ -62,12 +66,15 @@ export default function SimpleSlider() {
   return (
     <div className="w-9/10 mx-auto">
       <Slider {...settings}>
-        <Slide>1</Slide>
-        <Slide>2</Slide>
-        <Slide>3</Slide>
-        <Slide>4</Slide>
-        <Slide>5</Slide>
-        <Slide>6</Slide>
+        <Slide imagePath="galleryPics/Gallery1.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery2.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery3.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery4.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery5.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery6.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery7.png"></Slide>
+        <Slide imagePath="galleryPics/Gallery8.png"></Slide>
+        <Slide imagePath="galleryPics/Gallery9.png"></Slide>
       </Slider>
     </div>
   );
