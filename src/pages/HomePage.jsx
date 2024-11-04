@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import Schedule from '../components/schedule';
 import Title from '../components/Title';
+import Carousel from '../components/Carousel';
 
 
 
@@ -19,6 +20,7 @@ export default function HomePage() {
           event="22:00 Test Event 2"
           discription="Test run of schedule component to see how it looks with multiple scheduled events."
         />
+        <Carousel />
         <Title 
         title="Dauphin, Manitoba"
         />
