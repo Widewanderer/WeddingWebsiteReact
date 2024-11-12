@@ -7,8 +7,12 @@ export default function Footer() {
       {/* Empty div to push the image to the center */}
       <div className="flex-grow"></div>
       {/* Image centered */}
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-        <img src="/react.svg" alt="logo" className="h-10 w-10" />
+      <div className="absolute left-1/2 transform -translate-x-1/2 ">
+        <img
+          src="/react.svg"
+          alt="logo"
+          className="h-10 w-10 hidden md:block"
+        />
       </div>
       {/* Link to GitHub */}
       <div>
