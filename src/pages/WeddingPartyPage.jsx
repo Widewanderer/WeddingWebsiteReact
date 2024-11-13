@@ -24,7 +24,18 @@ export default function WeddingPartyPage() {
           <WeddingPartyCard
             image="/groomsmenPics/AnimatedWanderer.png"
             title="GroomsMan 1"
-            text="Here we have a wild groomsman in his natural habitat.He’s ready to jump into action the moment he’s needed, loyal as they come. Just like a pack animal, he’s here to support the big guy, the groom, standing by his side for the most important day of his life. Absolutely magnificent! "
+            text="Here we have a wild groomsman in his natural habitat. He’s ready to jump into action the moment he’s needed, loyal as they come. Just like a pack animal, he’s here to support the big guy, the groom, standing by his side for the most important day of his life. Absolutely magnificent! "
+          />
+          <WeddingPartyCard
+            image="../groomsmenPics/Peyton.png"
+            title="Peyton Looper"
+            text=""
+          />
+
+          <WeddingPartyCard
+            image="../groomsmenPics/Maxim.jpg"
+            title="Maxim Yulis"
+            text="Slava emberassing me on the streets of Tampere (another quiet Finnish city) by loudly singing a Swedish metal song. What a way to get through the Finnish winter!"
           />
         </div>
       </div>
