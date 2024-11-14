@@ -10,28 +10,47 @@ export default function WeddingPartyPage() {
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
             image="/bridalPartyPics/AnimatedFiona.png"
-            title="Bridesmaid 1"
+            title="Maid of Honor"
             text="Here is a little test of the wedding party cards component"
           />
           <WeddingPartyCard
             image="/bridalPartyPics/AnimatedFiona.png"
-            title="Bridesmaid 2"
+            title="Bridesmaid 1"
             text="Here is a little test of the wedding party cards component to see how it behaves with multiple cards"
           />
         </div>
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
+          <WeddingPartyCard 
+          image="" 
+          title="" 
+          text="" 
+          />
+          <WeddingPartyCard 
+          image="" 
+          title="" 
+          text="" 
+          />
+        </div>
+        {/* Groomsmen Section */}
         <Title title="The Groomsmen" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
             image="/groomsmenPics/AnimatedWanderer.png"
-            title="GroomsMan 1"
-            text="Here we have a wild groomsman in his natural habitat. He’s ready to jump into action the moment he’s needed, loyal as they come. Just like a pack animal, he’s here to support the big guy, the groom, standing by his side for the most important day of his life. Absolutely magnificent! "
+            title="Best Man"
+            text=" "
           />
+          <WeddingPartyCard
+            image="../groomsmenPics/AnimatedWanderer.png"
+            title="Groomsman"
+            text=""
+          />
+        </div>
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
             image="../groomsmenPics/Peyton.png"
             title="Peyton Looper"
             text=""
           />
-
           <WeddingPartyCard
             image="../groomsmenPics/Maxim.jpg"
             title="Maxim Yulis"
