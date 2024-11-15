@@ -20,18 +20,28 @@ export default function WeddingPartyPage() {
           />
         </div>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
-          <WeddingPartyCard image="" title="" text="" />
-          <WeddingPartyCard image="" title="" text="" />
+          <WeddingPartyCard
+            image="/bridalPartyPics/AnimatedFiona.png"
+            title=""
+            text=""
+          />
+          <WeddingPartyCard
+            image="/bridalPartyPics/AnimatedFiona.png"
+            title=""
+            text=""
+          />
         </div>
         {/* Groomsmen Section */}
         <Title title="The Groomsmen" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
+            name="Andrew Domingoes"
             image="/groomsmenPics/Andrew.png"
-            title="Best Man"
-            text=""
+            title="Andrew Domingoes"
+            text="Going down to Costa Rica and trying to coordinate moving across the country without a cell phone"
           />
           <WeddingPartyCard
+            name="Lebraun Premo"
             image="../groomsmenPics/AnimatedWanderer.png"
             title="Groomsman"
             text=""
@@ -39,13 +49,15 @@ export default function WeddingPartyPage() {
         </div>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
+            name="Peyton Looper"
             image="../groomsmenPics/Peyton.png"
-            title="Peyton Looper"
+            title="Groomsman"
             text=""
           />
           <WeddingPartyCard
+            name="Maxim Yulis"
             image="../groomsmenPics/Maxim.jpg"
-            title="Maxim Yulis"
+            title="Groomsman"
             text="Slava emberassing me on the streets of Tampere (another quiet Finnish city) by loudly singing a Swedish metal song. What a way to get through the Finnish winter!"
           />
         </div>
