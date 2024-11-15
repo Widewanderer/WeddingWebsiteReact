@@ -76,13 +76,17 @@ export default function SimpleSlider() {
       <Slider {...settings}>
         <Slide imagePath="galleryPics/Gallery1.JPG"></Slide>
         <Slide imagePath="galleryPics/Gallery2.JPG"></Slide>
-        <Slide imagePath="galleryPics/Gallery3.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery3.jpg"></Slide>
         <Slide imagePath="galleryPics/Gallery4.JPG"></Slide>
         <Slide imagePath="galleryPics/Gallery5.JPG"></Slide>
         <Slide imagePath="galleryPics/Gallery6.JPG"></Slide>
         <Slide imagePath="galleryPics/Gallery7.png"></Slide>
         <Slide imagePath="galleryPics/Gallery8.png"></Slide>
-        <Slide imagePath="galleryPics/Gallery9.png"></Slide>
+        <Slide imagePath="galleryPics/Gallery9.jpg"></Slide>
+        <Slide imagePath="galleryPics/Gallery10.JPG"></Slide>
+        <Slide imagePath="galleryPics/Gallery11.jpg"></Slide>
+        <Slide imagePath="galleryPics/Gallery12.jpg"></Slide>
+        <Slide imagePath="galleryPics/Gallery13.jpg"></Slide>
       </Slider>
     </div>
   );

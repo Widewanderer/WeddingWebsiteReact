@@ -20,24 +20,16 @@ export default function WeddingPartyPage() {
           />
         </div>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
-          <WeddingPartyCard 
-          image="" 
-          title="" 
-          text="" 
-          />
-          <WeddingPartyCard 
-          image="" 
-          title="" 
-          text="" 
-          />
+          <WeddingPartyCard image="" title="" text="" />
+          <WeddingPartyCard image="" title="" text="" />
         </div>
         {/* Groomsmen Section */}
         <Title title="The Groomsmen" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
-            image="/groomsmenPics/AnimatedWanderer.png"
+            image="/groomsmenPics/Andrew.png"
             title="Best Man"
-            text=" "
+            text=""
           />
           <WeddingPartyCard
             image="../groomsmenPics/AnimatedWanderer.png"
