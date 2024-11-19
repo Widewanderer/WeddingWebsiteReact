@@ -25,13 +25,13 @@ export default function RSVPForm() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-lg shadow-lg">
+    <div className="max-w-lg mx-auto p-6 bg-primary-100 rounded-lg">
       <h2 className="text-2xl font-bold text-center mb-4">RSVP</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Input */}
         <div>
           <label
-            className="block text-gray-700 font-medium mb-1"
+            className="block text-emerald-700 font-medium mb-1"
             htmlFor="name"
           >
             Name
@@ -43,7 +43,7 @@ export default function RSVPForm() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-full border border-emerald-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
             required
           />
         </div>
