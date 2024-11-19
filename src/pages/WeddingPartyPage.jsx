@@ -9,11 +9,13 @@ export default function WeddingPartyPage() {
         <Title title="The Bridal Party" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
+            name="Faith Henthorn"
             image="/bridalPartyPics/AnimatedFiona.png"
             title="Maid of Honor"
             text="Here is a little test of the wedding party cards component"
           />
           <WeddingPartyCard
+            name="Emily Henthorn"
             image="/bridalPartyPics/AnimatedFiona.png"
             title="Bridesmaid 1"
             text="Here is a little test of the wedding party cards component to see how it behaves with multiple cards"
@@ -21,13 +23,15 @@ export default function WeddingPartyPage() {
         </div>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
+            name="Kate Shackelford"
             image="/bridalPartyPics/AnimatedFiona.png"
-            title=""
+            title="Bridesmaid"
             text=""
           />
           <WeddingPartyCard
+            name="Angelina Khomenok"
             image="/bridalPartyPics/AnimatedFiona.png"
-            title=""
+            title="Bridesmaid"
             text=""
           />
         </div>
@@ -37,8 +41,8 @@ export default function WeddingPartyPage() {
           <WeddingPartyCard
             name="Andrew Domingoes"
             image="/groomsmenPics/Andrew.png"
-            title="Andrew Domingoes"
-            text="Going down to Costa Rica and trying to coordinate moving across the country without a cell phone"
+            title="Best Man"
+            text="Getting caught in a torrential downpour in Costa Rica on top of a volcano. With nowhere to go, we had to keep hiking and didn't forget to take photos."
           />
           <WeddingPartyCard
             name="Lebraun Premo"
@@ -52,13 +56,22 @@ export default function WeddingPartyPage() {
             name="Peyton Looper"
             image="../groomsmenPics/Peyton.png"
             title="Groomsman"
-            text=""
+            text="Deciding to walk to get some ice cream after trying out a new Uzbek restaurant because it “wasn’t that far.” I don’t know if I would have made it if there hadn’t been ice cream at the end of the walk. "
           />
           <WeddingPartyCard
             name="Maxim Yulis"
             image="../groomsmenPics/Maxim.jpg"
             title="Groomsman"
             text="Slava emberassing me on the streets of Tampere (another quiet Finnish city) by loudly singing a Swedish metal song. What a way to get through the Finnish winter!"
+          />
+        </div>
+        <Title title="Honorable Mentions" />
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
+          <WeddingPartyCard
+            name="Nolan Trotz"
+            image="/otherPics/NolanTrotz.jpg"
+            title="Lead Artist"
+            text="UUmmm.... coffee. Ya its good"
           />
         </div>
       </div>
