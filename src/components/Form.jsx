@@ -17,10 +17,13 @@ export default function RSVPForm() {
       [name]: value,
     }));
   };
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    const firebaseUrl =
+      "https://weddingwebsitereact-default-rtdb.firebaseio.com/rsvp.json";
+      fetch(firebaseUrl,{method:'POST', body:JSON.stringify(formData), headers:{'Content-Type': 'application/json'}}).then (()=>console.log("Data Sent to Firebase")). 
+      catch(err=>console.log(err));
     // You can add functionality to send data to a server or handle it as needed
   };
 
@@ -110,7 +113,7 @@ export default function RSVPForm() {
         {/* Location Preference */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Location 
+            Location
           </label>
           <div className="flex items-center space-x-4">
             <label className="inline-flex items-center">
@@ -153,7 +156,7 @@ export default function RSVPForm() {
         <div className="text-center">
           <button
             type="submit"
-            className="bg-emerald-500 text-white px-6 py-2 rounded-md hover:bg-emerald-600 transition duration-300"
+            className="bg-EPGreen text-primary  px-6 py-2 rounded-md hover:bg-emerald-600 transition duration-300"
           >
             Submit
           </button>
