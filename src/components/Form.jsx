@@ -7,7 +7,8 @@ export default function RSVPForm() {
     adults: 0,
     children: 0,
     dietaryRestrictions: "",
-    locationPreference: "", // New field for location preference
+    alcohol:"",
+    locationPreference: "", 
   });
 
   const handleChange = (e) => {
@@ -24,7 +25,7 @@ export default function RSVPForm() {
       "https://weddingwebsitereact-default-rtdb.firebaseio.com/rsvp.json";
       fetch(firebaseUrl,{method:'POST', body:JSON.stringify(formData), headers:{'Content-Type': 'application/json'}}).then (()=>console.log("Data Sent to Firebase")). 
       catch(err=>console.log(err));
-    // You can add functionality to send data to a server or handle it as needed
+
   };
 
   return (
@@ -37,7 +38,7 @@ export default function RSVPForm() {
             className="block text-emerald-700 font-medium mb-1"
             htmlFor="name"
           >
-            Name
+            First and Last Name
           </label>
           <input
             type="text"
@@ -110,6 +111,36 @@ export default function RSVPForm() {
           ></textarea>
         </div>
 
+        {/* Acohal */}
+        <div>
+          <label className="block text-gray-700 font-medium mb-1">
+            Alcohal
+          </label>
+          <div className="flex items-center space-x-4">
+            <label className="inline-flex items-center">
+              <input
+                type="radio"
+                name="alcohol"
+                value="Yes"
+                checked={formData.alcohol === "Yes"}
+                onChange={handleChange}
+                className="form-radio text-emerald-500"
+              />
+              <span className="ml-2">Yes Please</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input
+                type="radio"
+                name="alcohol"
+                value="No"
+                checked={formData.alcohol === "No"}
+                onChange={handleChange}
+                className="form-radio text-emerald-500"
+              />
+              <span className="ml-2">No Thank You</span>
+            </label>
+          </div>
+        </div>
         {/* Location Preference */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
