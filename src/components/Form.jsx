@@ -29,7 +29,7 @@ export default function RSVPForm() {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-primary-100 rounded-lg">
+    <div className="max-w-sm mx-auto p-6 bg-primary-100 rounded-lg">
       <h2 className="text-2xl font-bold text-center mb-4">RSVP</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Input */}
@@ -114,7 +114,7 @@ export default function RSVPForm() {
         {/* Acohal */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Alcohal
+            Alcohol
           </label>
           <div className="flex items-center space-x-4">
             <label className="inline-flex items-center">
