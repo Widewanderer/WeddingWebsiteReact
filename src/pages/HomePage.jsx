@@ -4,6 +4,7 @@ import Title from '../components/Title';
 import Carousel from '../components/Carousel';
 import nolanCat from '../nolanPics/nolanCat.svg'
 import nolanTree from '../nolanPics/nolanTree.svg'
+import nolanRusHouse from '../nolanPics/nolanRusHouse.svg'
 
 
 {
@@ -37,11 +38,18 @@ export default function HomePage() {
           />
         </div>
         <Carousel />
-        <Title title="Dauphin, Manitoba" />
-        <Schedule
-          event="17:00 First Event"
-          discription="More information about the first event will be coming soon. Stay tuned!"
-        />
+        <div>
+          <img
+            src={nolanRusHouse}
+            alt="Nolan Russian House"
+            className="max-w-72 z-index: 1000; absolute bottom-[18vh] left-2 hidden md:block"
+          />
+          <Title title="Dauphin, Manitoba" />
+          <Schedule
+            event="17:00 First Event"
+            discription="More information about the first event will be coming soon. Stay tuned!"
+          />
+        </div>
       </div>
     );
     }

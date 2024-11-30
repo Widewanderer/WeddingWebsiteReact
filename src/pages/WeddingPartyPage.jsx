@@ -35,6 +35,14 @@ export default function WeddingPartyPage() {
             text=""
           />
         </div>
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
+          <WeddingPartyCard
+            name="Michael Stewart "
+            image="../groomsmenPics/AnimatedWanderer.png"
+            title="Bridesman"
+            text=""
+          />
+        </div>
         {/* Groomsmen Section */}
         <Title title="The Groomsmen" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
@@ -65,12 +73,20 @@ export default function WeddingPartyPage() {
             text="Slava emberassing me on the streets of Tampere (another quiet Finnish city) by loudly singing a Swedish metal song. What a way to get through the Finnish winter!"
           />
         </div>
-        <Title title="Honorable Mentions" />
+        <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
+          <WeddingPartyCard
+            name="Anya & Danny Garcia"
+            image="/groomsmenPics/AnyaDanny.jpg"
+            title="Groomspeople"
+            text="One of my favorite memories together is when Slava, Fiona, Danny, and me we talked on Zoom in video call. I have never felt talking to people on video call like we are together in the same room."
+          />
+        </div>
+        <Title title="Lead Artist" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
             name="Nolan Trotz"
             image="/otherPics/NolanTrotz.jpg"
-            title="Lead Artist"
+            title=""
             text="UUmmm.... coffee. Ya its good"
           />
         </div>
