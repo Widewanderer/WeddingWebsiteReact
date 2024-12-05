@@ -5,7 +5,10 @@ import WeddingPartyCard from '../components/WeddingPartyCard';
 export default function WeddingPartyPage() {
     return (
       <div>
-        <Hero image="/heroPics/Pic2.png" title="Wedding Party" />
+        <Hero 
+        image="/heroPics/Pic2.png" 
+        title="Wedding Party" 
+        />
         <Title title="The Bridal Party" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
@@ -56,7 +59,7 @@ export default function WeddingPartyPage() {
             name="Lebraun Premo"
             image="../groomsmenPics/AnimatedWanderer.png"
             title="Groomsman"
-            text=""
+            text="From you performing the handfasting ceremony at my wedding, to being the first person to meet Aurelia, or getting a sneak peek at Fiona's engagement ring—these moments have all been such meaningful parts of my story, and I’m so thankful to have shared them with you."
           />
         </div>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">

@@ -9,9 +9,9 @@ export default function Footer() {
       {/* Image centered */}
       <div className="absolute left-1/2 transform -translate-x-1/2 ">
         <img
-          src="/react.svg"
+          src="/otherPics/FS_EngagementLogo.svg"
           alt="logo"
-          className="h-10 w-10 hidden md:block"
+          className="h-12 w-12 hidden md:block"
         />
       </div>
       {/* Link to GitHub */}

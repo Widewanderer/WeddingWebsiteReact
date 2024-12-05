@@ -21,7 +21,11 @@ function Navbar() {
           &#9776; {/* Unicode for hamburger menu icon */}
         </button>
         <div className="text-center">
-          <img src="/react.svg" alt="logo" className="h-10 w-10" />
+          <img
+            src="/otherPics/FS_EngagementLogo.svg"
+            alt="logo"
+            className="h-10 w-10"
+          />
         </div>
       </div>
 
@@ -46,7 +50,11 @@ function Navbar() {
 
         {/* Center logo - Only visible on larger screens */}
         <div className="hidden sm:flex text-center absolute left-1/2">
-          <img src="/react.svg" alt="logo" className="h-10 w-10" />
+          <img
+            src="/otherPics/FS_EngagementLogo.svg"
+            alt="logo"
+            className="h-12 w-12"
+          />
         </div>
 
         {/* Right side links */}
