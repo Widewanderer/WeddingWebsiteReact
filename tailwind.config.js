@@ -9,9 +9,12 @@ export default {
         EPGreen: "#616F64",
         DarUkrainianRed: "#910112",
       },
+      fontFamily: {
+        fancy: ["Luminari", "Luminari-Regular"],
+      },
     },
   },
-  plugins: [],
 
+  plugins: [],
 };
 
