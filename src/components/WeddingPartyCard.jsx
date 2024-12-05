@@ -5,17 +5,19 @@ export default function WeddingPartyCard(props) {
     <div className="bg-primary rounded-lg m-6 overflow-hidden  max-w-sm flex-grow mx-auto md:mx-0">
       {/* Name section */}
       <div className="px-6 text-center">
-        <h2 className="text-3xl font-fancy font-bold text-emerald mb-2">{props.name}</h2>
+        <h2 className="text-3xl font-fancy text-emerald ">
+          {props.name}
+        </h2>
+        <p className="text-lg font-fancy font-bold">{props.title}</p>
       </div>
       {/* Image section */}
-      <img className="w-full h-[500px] object-cover"
+      <img
+        className="w-full h-[500px] object-cover"
         src={props.image}
         alt={props.imageAlt}
       />
       {/* Memory section */}
       <div className="px-6 py-2 text-center">
-        <p className="text-lg font-bold">{props.title}</p>
-        {/* <h2 className="text-4xl font-bold text-emerald mb-2">{props.title}</h2> */}
         <h3 className="font-bold text-gray-900">Favorite Memory</h3>
         <p className="text-gray-600">{props.text}</p>
       </div>

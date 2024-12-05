@@ -24,9 +24,9 @@ export default function WeddingPartyPage() {
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
             name="Kate Shackelford"
-            image="/bridalPartyPics/AnimatedFiona.png"
+            image="/bridalPartyPics/Kate.JPG"
             title="Bridesmaid"
-            text=""
+            text="Gallivanting around Eastern Europe with Fiona in 2023. All I have to recount is honey beer, hotel room break ins, really good food, and “America, come! China, stay!"
           />
           <WeddingPartyCard
             name="Angelina Khomenok"
