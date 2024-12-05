@@ -7,11 +7,6 @@ import nolanTree from '../nolanPics/nolanTree.svg'
 import nolanRusHouse from '../nolanPics/nolanRusHouse.svg'
 
 
-{
-  /* use as a overlay needs to be view height and view width, put hiden class on mobile view  
-          
-          move this to sit over the title and schedule. Absolute position inside that div */
-}
 export default function HomePage() {
     return (
       <div>
