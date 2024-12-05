@@ -30,12 +30,12 @@ export default function RSVPForm() {
 
   return (
     <div className="max-w-sm mx-auto p-6 bg-primary-100 rounded-lg">
-      <h2 className="text-2xl font-bold text-center mb-4">RSVP</h2>
+      <h2 className="text-2xl font-fancy font-bold text-center mb-4">Please add your information below</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Input */}
         <div>
           <label
-            className="block text-emerald-700 font-medium mb-1"
+            className="block font-fancy text-gray-700 font-medium mb-1"
             htmlFor="name"
           >
             First and Last Name
@@ -55,7 +55,7 @@ export default function RSVPForm() {
         {/* Number of Adults */}
         <div>
           <label
-            className="block text-gray-700 font-medium mb-1"
+            className="block text-gray-700 font-fancy font-medium mb-1"
             htmlFor="adults"
           >
             Number of Adults Attending
@@ -68,14 +68,14 @@ export default function RSVPForm() {
             onChange={handleChange}
             min="0"
             placeholder="Enter number of adults"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-1/4 border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
           />
         </div>
 
         {/* Number of Children */}
         <div>
           <label
-            className="block text-gray-700 font-medium mb-1"
+            className="block text-gray-700 font-fancy font-medium mb-1"
             htmlFor="children"
           >
             Number of Children Attending
@@ -88,14 +88,14 @@ export default function RSVPForm() {
             onChange={handleChange}
             min="0"
             placeholder="Enter number of children"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-1/4 border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
           />
         </div>
 
         {/* Dietary Restrictions */}
         <div>
           <label
-            className="block text-gray-700 font-medium mb-1"
+            className="block text-gray-700 font-fancy font-medium mb-1"
             htmlFor="dietaryRestrictions"
           >
             Dietary Restrictions
@@ -113,29 +113,29 @@ export default function RSVPForm() {
 
         {/* Acohal */}
         <div>
-          <label className="block text-gray-700 font-medium mb-1">
+          <label className="block font-fancy text-gray-700 font-medium mb-1">
             Alcohol
           </label>
           <div className="flex items-center space-x-4">
-            <label className="inline-flex items-center">
+            <label className="inline-flex items-center font-fancy">
               <input
                 type="radio"
                 name="alcohol"
                 value="Yes"
                 checked={formData.alcohol === "Yes"}
                 onChange={handleChange}
-                className="form-radio text-emerald-500"
+                className="form-radio"
               />
               <span className="ml-2">Yes Please</span>
             </label>
-            <label className="inline-flex items-center">
+            <label className="inline-flex items-center font-fancy">
               <input
                 type="radio"
                 name="alcohol"
                 value="No"
                 checked={formData.alcohol === "No"}
                 onChange={handleChange}
-                className="form-radio text-emerald-500"
+                className="form-radio"
               />
               <span className="ml-2">No Thank You</span>
             </label>
@@ -143,33 +143,33 @@ export default function RSVPForm() {
         </div>
         {/* Location Preference */}
         <div>
-          <label className="block text-gray-700 font-medium mb-1">
+          <label className="block text-gray-700 font-fancy font-medium mb-1">
             Location
           </label>
           <div className="flex items-center space-x-4">
-            <label className="inline-flex items-center">
+            <label className="inline-flex items-center font-fancy">
               <input
                 type="radio"
                 name="locationPreference"
                 value="South Carolina"
                 checked={formData.locationPreference === "South Carolina"}
                 onChange={handleChange}
-                className="form-radio text-emerald-500"
+                className="form-radio"
               />
               <span className="ml-2">South Carolina</span>
             </label>
-            <label className="inline-flex items-center">
+            <label className="inline-flex items-center font-fancy">
               <input
                 type="radio"
                 name="locationPreference"
                 value="Manitoba"
                 checked={formData.locationPreference === "Manitoba"}
                 onChange={handleChange}
-                className="form-radio text-emerald-500"
+                className="form-radio"
               />
               <span className="ml-2">Manitoba</span>
             </label>
-            <label className="inline-flex items-center">
+            <label className="inline-flex items-center font-fancy">
               <input
                 type="radio"
                 name="locationPreference"
