@@ -10,7 +10,9 @@ export default {
         DarUkrainianRed: "#910112",
       },
       fontFamily: {
-        fancy: ["Luminari", "Luminari-Regular"],
+        hero: ["RussianLand", "Luminari", "Times New Roman", "serif"],
+        hero2: ["Bazilikin", "Luminari", "Times New Roman", "serif"],
+        fancy: ["Luminari", "Times New Roman", "serif"],
       },
     },
   },

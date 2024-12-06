@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'RussianLand';
+  src: url('/src/fonts/RussianLand.ttf') 
+  format('truetype');
+}
 
+@font-face {
+  font-family: 'Bazilikin';
+  src: url('/src/fonts/Bazilikin-Heavy.ttf') 
+  format('truetype');
+}
