@@ -13,3 +13,9 @@
   src: url('/src/fonts/Bazilikin-Heavy.ttf') 
   format('truetype');
 }
+
+@font-face {
+  font-family: 'Luminari';
+  src: url('/src/fonts/Luminari.ttf') 
+  format('truetype');
+}
