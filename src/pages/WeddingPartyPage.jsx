@@ -20,7 +20,7 @@ export default function WeddingPartyPage() {
           <WeddingPartyCard
             name="Emily Henthorn"
             image="/bridalPartyPics/AnimatedFiona.png"
-            title="Bridesmaid 1"
+            title="Bridesmaid"
             text="Here is a little test of the wedding party cards component to see how it behaves with multiple cards"
           />
         </div>

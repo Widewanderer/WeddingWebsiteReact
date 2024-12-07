@@ -37,13 +37,13 @@ function Navbar() {
       >
         {/* Left side links */}
         <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-          <Link to="/" className="link">
+          <Link to="/" className="link font-hero text-4xl">
             Home
           </Link>
-          <Link to="/weddingparty" className="link">
+          <Link to="/weddingparty" className="link font-hero text-4xl">
             Wedding Party
           </Link>
-          <Link to="/travel" className="link">
+          <Link to="/travel" className="link font-hero text-4xl">
             Travel
           </Link>
         </div>
@@ -59,18 +59,18 @@ function Navbar() {
 
         {/* Right side links */}
         <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-          <Link to="/rsvp" className="link">
+          <Link to="/rsvp" className="link font-hero text-4xl">
             RSVP
           </Link>
           <a
             href="https://www.zola.com/wedding/slavatysonandfiona"
             target="_blank"
             rel="noopener noreferrer"
-            className="link"
+            className="link font-hero text-4xl"
           >
             Registry
           </a>
-          <Link to="/q&a" className="link">
+          <Link to="/q&a" className="link font-hero text-4xl">
             Q&A
           </Link>
         </div>
