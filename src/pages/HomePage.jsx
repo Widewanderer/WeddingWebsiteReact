@@ -37,7 +37,7 @@ export default function HomePage() {
           <img
             src={nolanRusHouse}
             alt="Nolan Russian House"
-            className="max-w-72 z-index: 1000; absolute bottom-[18vh] left-2 hidden md:block"
+            className="max-w-72 z-index: 1000; absolute bottom-[16vh] left-2 hidden md:block"
           />
           <Title title="Dauphin, Manitoba" />
           <Schedule

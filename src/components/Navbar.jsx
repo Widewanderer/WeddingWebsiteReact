@@ -10,7 +10,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#D3D3D325] w-full px-4 py-2 absolute top-0 z-50 drop-shadow-lg">
+    <nav className="w-full px-4 py-2 absolute top-0 z-50 drop-shadow-lg">
       {/* Hamburger Menu Button - Visible on small screens only. */}
       <div
         className="flex justify-between items-center sm:hidden"
@@ -36,7 +36,7 @@ function Navbar() {
         }`}
       >
         {/* Left side links */}
-        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+        <div className="bg-[#D3D3D335] flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 p-1 rounded-lg">
           <Link to="/" className="link font-hero text-4xl">
             Home
           </Link>
@@ -58,7 +58,7 @@ function Navbar() {
         </div>
 
         {/* Right side links */}
-        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+        <div className="bg-[#D3D3D335] flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 p-1 rounded-lg">
           <Link to="/rsvp" className="link font-hero text-4xl">
             RSVP
           </Link>
@@ -71,7 +71,7 @@ function Navbar() {
             Registry
           </a>
           <Link to="/q&a" className="link font-hero text-4xl">
-            Q&A
+            FAQ
           </Link>
         </div>
       </div>
