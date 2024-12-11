@@ -9,7 +9,7 @@ export default function Title(props){
                 <p className="text-slate-500 text-emerald">
                     {props.subtitle}
                 </p>
-                <div className="w-full border-b border-emerald py-1">
+                <div className="w-full border-b-2 border-emerald py-1">
             </div>
 
         </div>
