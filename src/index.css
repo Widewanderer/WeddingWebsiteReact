@@ -19,3 +19,15 @@
   src: url('/src/fonts/Luminari.ttf') 
   format('truetype');
 }
+
+@font-face {
+  font-family: 'Steravina';
+  src: url'/src/fonts/Steravina.ttf'
+  format('truetype');
+}
+
+@layer base {
+  html {
+    font-family: 'Steravina', 'Luminari', 'Times New Roman', serif;
+  }
+}
