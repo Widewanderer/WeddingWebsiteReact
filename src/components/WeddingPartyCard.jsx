@@ -5,7 +5,7 @@ export default function WeddingPartyCard(props) {
     <div className="bg-primary rounded-lg m-6 overflow-hidden  max-w-sm flex-grow mx-auto md:mx-0">
       {/* Name section */}
       <div className="px-6 text-center">
-        <h2 className="text-3xl font-fancy text-emerald ">
+        <h2 className="text-3xl font-fancy text-emerald text-shadow-weak">
           {props.name}
         </h2>
         <p className="text-lg font-fancy font-bold">{props.title}</p>

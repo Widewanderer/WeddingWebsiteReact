@@ -30,7 +30,9 @@ export default function RSVPForm() {
 
   return (
     <div className="max-w-sm mx-auto p-6 bg-primary-100 rounded-lg">
-      <h2 className="text-2xl font-fancy font-bold text-gray-800 text-center mb-4">Please add your information below</h2>
+      <h2 className="text-2xl font-fancy font-bold text-emerald text-center mb-4 text-shadow-weak">
+        Please submit your information below
+      </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name Input */}
         <div>
