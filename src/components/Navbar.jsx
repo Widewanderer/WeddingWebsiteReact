@@ -36,14 +36,23 @@ function Navbar() {
         }`}
       >
         {/* Left side links */}
-        <div className="bg-[#D3D3D335] flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 p-1 rounded-lg">
-          <Link to="/" className="link font-hero text-4xl">
+        <div className=" flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 p-1 rounded-lg">
+          <Link
+            to="/"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong"
+          >
             Home
           </Link>
-          <Link to="/weddingparty" className="link font-hero text-4xl">
+          <Link
+            to="/weddingparty"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong"
+          >
             Wedding Party
           </Link>
-          <Link to="/travel" className="link font-hero text-4xl">
+          <Link
+            to="/travel"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong"
+          >
             Travel
           </Link>
         </div>
@@ -58,19 +67,25 @@ function Navbar() {
         </div>
 
         {/* Right side links */}
-        <div className="bg-[#D3D3D335] flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 p-1 rounded-lg">
-          <Link to="/rsvp" className="link font-hero text-4xl">
+        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 p-1 rounded-lg">
+          <Link
+            to="/rsvp"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong"
+          >
             RSVP
           </Link>
           <a
             href="https://www.zola.com/wedding/slavatysonandfiona"
             target="_blank"
             rel="noopener noreferrer"
-            className="link font-hero text-4xl"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong"
           >
             Registry
           </a>
-          <Link to="/q&a" className="link font-hero text-4xl">
+          <Link
+            to="/q&a"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong"
+          >
             FAQ
           </Link>
         </div>
