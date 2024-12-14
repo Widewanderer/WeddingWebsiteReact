@@ -7,7 +7,9 @@ export default {
     extend: {
       colors: {
         primary: "#fff9ea",
-        emerald: "#0E4037",
+        emerald: {
+          DEFAULT: "#0E4037",
+        },
         EPGreen: "#616F64",
         DarUkrainianRed: "#910112",
       },
@@ -21,6 +23,7 @@ export default {
         default: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Example shadow
         strong: "4px 4px 8px rgba(0, 0, 0, 0.75)", // Stronger shadow
         weak: "1px 1px 2px rgba(0, 0, 0, 0.25)", // Subtle shadow
+        hover: "4px 4px 8px rgba(0, 200, 0, 0.75)", // Shadow on hover
       },
     },
   },

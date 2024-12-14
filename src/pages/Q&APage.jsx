@@ -4,7 +4,7 @@ import QA from "../components/Q&A";
 export default function QAPage() {
   return (
     <div>
-      <Hero image="/heroPics/Pic1.png" title='Q&A'/>
+      <Hero image="/heroPics/Pic1.png" title='FAQ'/>
       <QA
         question="What is the best movie of all time?"
         answer="The Two Towers, though the Return of the King is also an acceptable answer. All other opinions are incorrect."

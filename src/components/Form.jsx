@@ -49,7 +49,7 @@ export default function RSVPForm() {
             value={formData.name}
             onChange={handleChange}
             placeholder="Enter your name"
-            className="w-full border border-emerald-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald focus:outline-none"
             required
           />
         </div>
@@ -60,7 +60,7 @@ export default function RSVPForm() {
             className="block text-gray-700 font-fancy font-medium mb-1"
             htmlFor="adults"
           >
-            Number of Adults Attending
+            Adults Attending
           </label>
           <input
             type="number"
@@ -70,7 +70,7 @@ export default function RSVPForm() {
             onChange={handleChange}
             min="0"
             placeholder="Enter number of adults"
-            className="w-1/4 border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-1/4 border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald focus:outline-none"
           />
         </div>
 
@@ -80,7 +80,7 @@ export default function RSVPForm() {
             className="block text-gray-700 font-fancy font-medium mb-1"
             htmlFor="children"
           >
-            Number of Children Attending
+            Children Attending
           </label>
           <input
             type="number"
@@ -90,7 +90,7 @@ export default function RSVPForm() {
             onChange={handleChange}
             min="0"
             placeholder="Enter number of children"
-            className="w-1/4 border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-1/4 border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald focus:outline-none"
           />
         </div>
 
@@ -108,7 +108,7 @@ export default function RSVPForm() {
             value={formData.dietaryRestrictions}
             onChange={handleChange}
             placeholder="Enter dietary restrictions, if any"
-            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-emerald focus:outline-none"
             rows="3"
           ></textarea>
         </div>
@@ -178,7 +178,7 @@ export default function RSVPForm() {
                 value="Both"
                 checked={formData.locationPreference === "Both"}
                 onChange={handleChange}
-                className="form-radio text-emerald-500"
+                className="form-radio text-emerald"
               />
               <span className="ml-2">Both</span>
             </label>
@@ -189,7 +189,7 @@ export default function RSVPForm() {
         <div className="text-center">
           <button
             type="submit"
-            className="bg-EPGreen text-primary  px-6 py-2 rounded-md hover:bg-emerald-600 transition duration-300"
+            className="bg-EPGreen text-primary  px-6 py-2 rounded-md hover:bg-emerald transition duration-500"
           >
             Submit
           </button>
