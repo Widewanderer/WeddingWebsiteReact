@@ -45,7 +45,7 @@ function Navbar() {
           </Link>
           <Link
             to="/weddingparty"
-            className="link font-hero text-4xl text-white text-4xl text-shadow-strong transition-tranformation origin-left sm:origin-center hover:text-DarUkrainianRed hover:scale-125 ease-in duration-500"
+            className="link font-hero text-4xl text-white text-4xl text-shadow-strong transition-transform origin-left sm:origin-center hover:text-DarUkrainianRed hover:scale-125 ease-in duration-500"
           >
             Wedding Party
           </Link>
