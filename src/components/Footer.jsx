@@ -11,7 +11,7 @@ export default function Footer() {
         <img
           src="/otherPics/FS_EngagementLogo.svg"
           alt="logo"
-          className="h-12 w-12 hidden md:block"
+          className="h-24 w-24 hidden md:block"
         />
       </div>
       {/* Link to GitHub */}

@@ -58,11 +58,11 @@ function Navbar() {
         </div>
 
         {/* Center logo - Only visible on larger screens */}
-        <div className="hidden sm:flex text-center absolute left-1/2">
+        <div className="hidden sm:flex text-center absolute left-1/2 top-[5%]">
           <img
             src="/otherPics/FS_EngagementLogo.svg"
             alt="logo"
-            className="h-12 w-12"
+            className="h-20 w-20"
           />
         </div>
 
