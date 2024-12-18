@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { databaseUrl} from "../../firebaseConfig.js"
 
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ export default function RSVPForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const firebaseUrl =
-      "https://weddingwebsitereact-default-rtdb.firebaseio.com/rsvp.json";
+      databaseUrl + "/rsvp.json";
       fetch(firebaseUrl,{method:'POST', body:JSON.stringify(formData), headers:{'Content-Type': 'application/json'}}).then (()=>console.log("Data Sent to Firebase")). 
       catch(err=>console.log(err));
 

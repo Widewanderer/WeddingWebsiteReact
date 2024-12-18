@@ -8,7 +8,12 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+
+
+
 -- React Slick  (carosel)
 -- Tailwind CSS 
 -- tailwindcss-textshadow (to make text pop)
 
+
+(How to build/ deploy website, link / change database on firebase )
