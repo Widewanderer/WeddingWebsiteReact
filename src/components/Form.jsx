@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import firebaseConfig from "../../firebaseConfig.js"
+import firebaseConfig from "../../firebaseConfig.js";
 
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
@@ -8,9 +7,12 @@ export default function RSVPForm() {
     adults: 0,
     children: 0,
     dietaryRestrictions: "",
-    alcohol:"",
-    locationPreference: "", 
+    alcohol: "",
+    locationPreference: "",
   });
+
+  const [isError, setIsError] = useState(false);
+  const [formMessage, setFormMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,14 +21,22 @@ export default function RSVPForm() {
       [name]: value,
     }));
   };
- 
+
+  // try to change .then message below to setFormMessage with a message of succes if SetisError remains false.
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const firebaseUrl =
-      databaseUrl + "/rsvp.json";
-      fetch(firebaseUrl,{method:'POST', body:JSON.stringify(formData), headers:{'Content-Type': 'application/json'}}).then (()=>console.log("Data Sent to Firebase")). 
-      catch(err=>console.log(err));
-
+    const firebaseUrl = firebaseConfig.databaseUrl + "/rsvp.json";
+    fetch(firebaseUrl, {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then(() => console.log("Data Sent to Firebase"))
+      .catch((err) => {
+        setIsError(true);
+        setFormMessage(err);
+      });
   };
 
   return (
