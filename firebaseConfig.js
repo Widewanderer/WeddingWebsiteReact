@@ -31,3 +31,6 @@ get(child(ref(database), "Test")).then((snapshot) => {
     console.log("No data available");
   }
 })
+
+
+export default firebaseConfig;

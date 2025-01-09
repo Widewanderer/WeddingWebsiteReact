@@ -17,7 +17,7 @@ export default function Footer() {
       {/* Link to GitHub */}
       <div>
         <a href="https://github.com/Widewanderer/WeddingWebsiteReact">
-          <i class="fab fa-github text-3xl"></i>
+          <i className="fab fa-github text-3xl"></i>
           GitHub
         </a>
       </div>
