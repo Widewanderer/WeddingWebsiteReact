@@ -38,7 +38,7 @@ export default function WeddingPartyPage() {
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <WeddingPartyCard
             name="Michael Stewart "
-            image="../bridalParty/Michael.jpg"
+            image="/bridalPartyPics/Michael.jpg"
             title="Bridesman"
             text="Fiona’s parents came to visit Sewanee and she invited me to get dinner with her parents by where they were staying in Manchester. We stumbled across Bites of Europe, which featured a very small market of assorted German products. We discussed many things, including which was the croissant story and Fiona’s sign. "
           />
