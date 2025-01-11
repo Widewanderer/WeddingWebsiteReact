@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { databaseUrl} from "../../firebaseConfig.js"
+import firebaseConfig from "../../firebaseConfig.js"
 
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
