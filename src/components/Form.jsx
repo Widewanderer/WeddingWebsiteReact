@@ -32,10 +32,13 @@ export default function RSVPForm() {
       body: JSON.stringify(formData),
       headers: { "Content-Type": "application/json" },
     })
-      .then(() => console.log("Data Sent to Firebase"))
+      .then(() => {
+        setIsError(false);
+        setFormMessage('Success! Your RSVP has been submitted.');
+      })
       .catch((err) => {
         setIsError(true);
-        setFormMessage(err);
+        setFormMessage("An error has occurrd: " + err);
       });
   };
 
@@ -206,6 +209,16 @@ export default function RSVPForm() {
           </button>
         </div>
       </form>
+      {/* Submition Message (Conditional) */}
+      {formMessage && (
+        <div
+        className={`mt-4 p-4 rounded-md text-center ${
+            isError ? "bg-red-200 text-red-800" : "bg-green-200 text-green-800"
+          }`}
+          >
+            {formMessage}
+          </div>
+      )}
     </div>
   );
 }
