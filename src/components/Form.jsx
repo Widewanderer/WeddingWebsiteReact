@@ -26,21 +26,24 @@ export default function RSVPForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const firebaseUrl = firebaseConfig.databaseUrl + "/rsvp.json";
+    const firebaseUrl = firebaseConfig.databaseURL + "/rsvp.json";
     fetch(firebaseUrl, {
       method: "POST",
       body: JSON.stringify(formData),
       headers: { "Content-Type": "application/json" },
     })
-      .then(() => {
-        setIsError(false);
-        setFormMessage('Success! Your RSVP has been submitted.');
-      })
-      .catch((err) => {
-        setIsError(true);
-        setFormMessage("An error has occurrd: " + err);
-      });
-  };
+      .then((response) => {
+        if (response.ok){
+          setIsError(false);
+          setFormMessage("Success! Your RSVP has been submitted.");
+          console.log(response);
+        } else {
+          setIsError(true);
+        setFormMessage('There was an error submitting your RSVP. '+ response.statusText);
+        }
+       
+  });
+};
 
   return (
     <div className="max-w-sm mx-auto p-6 bg-primary-100 rounded-lg">
