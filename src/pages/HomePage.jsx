@@ -24,12 +24,12 @@ export default function HomePage() {
           />
           <Title title="Socastee, South Carolina" />
           <Schedule
-            event="21:00 Test Event"
-            discription="Test run of schedule component to see if it works. Now I will extend the text to see how it looks with more text."
+            event="16:00 Event 1"
+            discription="More information about the wedding schedule will be coming soon. Stay tuned!"
           />
           <Schedule
-            event="22:00 Test Event 2"
-            discription="Test run of schedule component to see how it looks with multiple scheduled events."
+            event="17:00 Event 2"
+            discription="More information about the wedding schedule will be coming soon. Stay tuned!"
           />
         </div>
         <Carousel />
@@ -39,10 +39,10 @@ export default function HomePage() {
             alt="Nolan Russian House"
             className="max-w-72 z-index: 1000; absolute bottom-[16vh] left-2 hidden md:block"
           />
-          <Title title="Dauphin, Manitoba" />
+          <Title title="Manitoba, Canada" />
           <Schedule
             event="17:00 First Event"
-            discription="More information about the first event will be coming soon. Stay tuned!"
+            discription="More information about the wedding schedule will be coming soon. Stay tuned!"
           />
         </div>
       </div>

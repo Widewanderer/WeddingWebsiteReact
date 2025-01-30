@@ -16,9 +16,9 @@ export default function WeddingPartyPage() {
           />
           <WeddingPartyCard
             name="Emily Henthorn"
-            image="/bridalPartyPics/AnimatedFiona.png"
+            image="/bridalPartyPics/Emily.jpg"
             title="Bridesmaid"
-            text="Here is a little test of the wedding party cards component to see how it behaves with multiple cards"
+            text="A moment with Fiona is never wasted, including our late night movie binges. All of us sisters together, talking through the film and not actually watching it, is what I will always cherish most. "
           />
         </div>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
@@ -54,7 +54,7 @@ export default function WeddingPartyPage() {
           />
           <WeddingPartyCard
             name="Lebraun Premo"
-            image="../groomsmenPics/AnimatedWanderer.png"
+            image="../groomsmenPics/Lebraun.jpg"
             title="Groomsman"
             text="From you performing the handfasting ceremony at my wedding, to being the first person to meet Aurelia, or getting a sneak peek at Fiona's engagement ring—these moments have all been such meaningful parts of my story, and I’m so thankful to have shared them with you."
           />

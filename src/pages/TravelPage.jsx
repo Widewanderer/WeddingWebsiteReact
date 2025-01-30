@@ -20,7 +20,7 @@ export default function TravelPage() {
             address="1 Bree Street, Bree, Middle-earth"
           />
           <TravelCard
-            name="The Overlook Hotel"
+            name="Holiday Inn Resort at Surfside Beach"
             description="A historic mountain retreat with breathtaking views and a mysterious charm. Known for its grand ballroom and long hallways."
             address="Sidewinder Pass, Colorado"
           />
