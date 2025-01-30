@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import firebaseConfig from "../../firebaseConfig.js"
+import firebaseConfig from "../../firebaseConfig.js";
 
 export default function RSVPForm() {
   const [formData, setFormData] = useState({
@@ -8,9 +7,12 @@ export default function RSVPForm() {
     adults: 0,
     children: 0,
     dietaryRestrictions: "",
-    alcohol:"",
-    locationPreference: "", 
+    alcohol: "",
+    locationPreference: "",
   });
+
+  const [isError, setIsError] = useState(false);
+  const [formMessage, setFormMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,15 +21,29 @@ export default function RSVPForm() {
       [name]: value,
     }));
   };
- 
+
+  // try to change .then message below to setFormMessage with a message of succes if SetisError remains false.
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const firebaseUrl =
-      databaseUrl + "/rsvp.json";
-      fetch(firebaseUrl,{method:'POST', body:JSON.stringify(formData), headers:{'Content-Type': 'application/json'}}).then (()=>console.log("Data Sent to Firebase")). 
-      catch(err=>console.log(err));
-
-  };
+    const firebaseUrl = firebaseConfig.databaseURL + "/rsvp.json";
+    fetch(firebaseUrl, {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => {
+        if (response.ok){
+          setIsError(false);
+          setFormMessage("Success! Your RSVP has been submitted.");
+          console.log(response);
+        } else {
+          setIsError(true);
+        setFormMessage('There was an error submitting your RSVP. '+ response.statusText);
+        }
+       
+  });
+};
 
   return (
     <div className="max-w-sm mx-auto p-6 bg-primary-100 rounded-lg">
@@ -196,6 +212,16 @@ export default function RSVPForm() {
           </button>
         </div>
       </form>
+      {/* Submition Message (Conditional) */}
+      {formMessage && (
+        <div
+        className={`mt-4 p-4 rounded-md text-center ${
+            isError ? "bg-red-200 text-red-800" : "bg-green-200 text-green-800"
+          }`}
+          >
+            {formMessage}
+          </div>
+      )}
     </div>
   );
 }
