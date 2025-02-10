@@ -9,6 +9,15 @@ export default function TravelCard(props) {
           {props.name}
         </div>
         <p className="text-slate-700 text-emerald">{props.description}</p>
+        {props.link && (
+        <a
+        href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-emerald underline mt-2 inline-block">
+         {props.name} Website
+        </a>
+        )}
         <p className="text-slate-600 text-emerald">{props.address}</p>
       </div>
     );
