@@ -22,7 +22,6 @@ export default function RSVPForm() {
     }));
   };
 
-  // try to change .then message below to setFormMessage with a message of succes if SetisError remains false.
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -75,7 +75,7 @@ function Navbar() {
             RSVP
           </Link>
           <a
-            href="https://www.zola.com/wedding/slavatysonandfiona"
+            href="https://www.zola.com/wedding/slavatysonandfiona/registry"
             target="_blank"
             rel="noopener noreferrer"
             className="link font-hero text-4xl text-white text-4xl text-shadow-strong transition-transform origin-left sm:origin-center hover:text-DarUkrainianRed hover:scale-125 ease-in duration-500"
