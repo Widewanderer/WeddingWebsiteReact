@@ -24,28 +24,39 @@ export default function HomePage() {
           />
           <Title title="Socastee, South Carolina" />
           <Schedule
+            date="June 13, 2025"
             event="Friday Hangout Time"
-            discription="We will have a time and place were we will plan to be friday before the wedding. Anyone who wants to will be welcome to swing by and socialize Will update this page when we decide the details"
+            time="0:00"
+            location=""
+            address=""
+            discription="All are welcome to join us the day before the wedding to say hello and enjoy some time together before the big day! Details regarding the time and location will be updated here once confirmed."
           />
           <Schedule
-            event="Saterday Wedding Ceremony"
-            discription="The wedding ceremony will be at the Socastee United Methodist Church located at the unfortunately named 5575 Dick Pond Road, Myrtle Beach, SC . This church is on special significance as Fiona's parents, grandparents, and great-grandparents where all married here."
+            date="June 14, 2025"
+            event="Ceremony"
+            time="14:30 pm"
+            location="Socastee United Methodist Church"
+            address="5575 Dick Pond Road, Myrtle Beach, SC 29588"
+            discription="This church holds a special place in our hearts—it's where Fiona’s parents and grandparents were married, making it even more meaningful as we begin our own journey together."
           />
           <Schedule
-            event="18:30 Cocktail Hour"
-            discription="Cocktail hour and reception will take place at Outside Alive Farms 6791 SC-707, Myrtle Beach, SC 29588. The farm was previously part of the larger McCormick property until Fiona's grandmother eventually sold it to Jason. It was very important to her that the new owner would be someone who truely cared for the land and Jason was the perfect fit. "
+            event="Cocktail Hour"
+            time="16:30"
+            location="Outside Alive Farms"
+            address="6791 SC-707, Myrtle Beach, SC 29588"
+            discription="This property has a rich family history. Originally part of the larger McCormick property, it was eventually sold by Fiona’s grandmother and passed into the care of Jason Burzler. It was very important to her that the property would be cared for by someone who truly appreciated the land, and Jason has been the perfect steward of it ever since. We’re thrilled to celebrate our cocktail hour and reception here, where generations of memories have been made."
           />
-          <Schedule 
-            event="18:00 Grand Entrance Reception" 
-            discription="Here come the newly weds!" 
+          <Schedule
+            event="Reception"
+            location="Outside Alive Farms"
+            address="6791 SC-707, Myrtle Beach, SC 29588"
+            time="18:00"
+            discription="Eat, Drink, and be Merry!"
           />
-          <Schedule 
-            event="18:15 Reception Dinner" 
-            discription="Eat, Drink, and be Merry!" 
-          />
-           <Schedule 
-            event="21:50 The Grand Send Off" 
-            discription="Wish us well as we sail off into the distance! Music needs to be off at 22:00 so party will be ending." 
+          <Schedule
+            event="The Grand Farewell"
+            time="21:50"
+            discription="Wish us well as we start this new chapter! Please note that music will end at 10:00 PM, and the party will come to a close shortly after."
           />
         </div>
         <Carousel />
@@ -57,7 +68,7 @@ export default function HomePage() {
           />
           <Title title="Manitoba, Canada" />
           <Schedule
-            event="17:00 First Event"
+            event="Coming Soon"
             discription="More information about the wedding schedule will be coming soon. Stay tuned!"
           />
         </div>
