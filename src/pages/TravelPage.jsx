@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import Title from "../components/Title";
-import TravelCard from "../components/TravelCard"
+import TravelCard from "../components/TravelCard";
 
 export default function TravelPage() {
   return (
@@ -31,19 +31,23 @@ export default function TravelPage() {
         <Title title="Restaurants" />
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center gap-4">
           <TravelCard
-            name="Gusteau's"
-            description="A 4 star restaurant with a ratatouille that is to die for. Made by a mysterious young chef with unorthodox methods"
-            address="1673 Rattertonne St. Paris, France"
+            name="Driftwoods Seafood & Steak Restaurant"
+            description="Great place to get some tasty and resonably priced seafood while you're down in SC!"
+            link="https://driftwoodsseafoodandsteak.com/"
+            address="10799 SC-707, Murrells Inlet, SC 29576"
           />
           <TravelCard
-            name="The Green Dragon"
-            description="A cozy pub nestled in the heart of the Shire. Known for its hearty meals, hospitalable Hobbits, and having the only brew for the brave and true."
-            address="Bywater, Hobbiton, The Shire, Middle-earth"
+            name="Old Town Crapes"
+            description="Have a taste of the old country! Eastern European fair specializing in breakfast foods and delicious blini. If you've never tried Georgian Khachapury be sure to get an order!"
+            link="https://oldtowncrepes.com/"
+            address="4205 N King’s Hwy
+Myrtle Beach, SC, 29577"
           />
           <TravelCard
-            name="The Three Broomsticks"
-            description="A charming tavern in Hogsmeade Village, famous for its buttery Butterbeer and a welcoming atmosphere for wizards and witches alike."
-            address="High Street, Hogsmeade, Scotland"
+            name="Miyabi"
+            description="A delicious Tappenyaki style (hibachi) gill. Come hungry because you will definately have leftovers."
+            link="https://miyabi.life/"
+            address="9732 N Kings Hwy, Myrtle Beach, SC 29572"
           />
         </div>
       </div>
