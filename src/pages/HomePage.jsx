@@ -26,10 +26,11 @@ export default function HomePage() {
           <Schedule
             date="June 13, 2025"
             event="Friday Hangout Time"
-            time="0:00"
-            location=""
-            address=""
-            discription="All are welcome to join us the day before the wedding to say hello and enjoy some time together before the big day! Details regarding the time and location will be updated here once confirmed."
+            time="15:30-17:30"
+            location="WarBird Park"
+            address="Farrow Pkwy, Myrtle Beach, SC 29577"
+            discription="All are welcome to drop by and spend some time with us before the big day! Drop by anytime between 15:30 and 17:30. We’ll be at one of the pavilions there. 
+In case of heavy or prolonged rain, we’ll meet instead at the Socastee UMC Fellowship Hall. Check back here for any weather location updates on Friday morning."
           />
           <Schedule
             date="June 14, 2025"
